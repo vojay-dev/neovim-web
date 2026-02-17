@@ -8,7 +8,7 @@ A **Neovim-themed personal website framework**. Zero build, zero npm, pure vanil
 
 Your entire site is configured through a single `config.js` file. Add pages by dropping markdown files. Built-in DuckDB SQL console, Telescope fuzzy finder, vim keybindings, 5 color themes, and fun easter eggs.
 
-**[Live Demo (vojay.io)](https://vojay.io)**
+**[Live Demo](https://vojay-dev.github.io/neovim-web/)**
 
 ---
 
