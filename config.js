@@ -33,8 +33,8 @@ const config = {
     meta: {
         description: 'A Neovim-themed personal website',
         ogImage: 'images/og-image.png',
-        favicon: 'images/favicon.ico',
-        favicon32: 'images/favicon-32x32.png',
+        favicon: 'images/favicon.svg',
+        favicon32: 'images/favicon-32.png',
     },
 
     analytics: {
