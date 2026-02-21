@@ -1,7 +1,6 @@
 # neovim-web
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
-[![Zero Build](https://img.shields.io/badge/build-none-blue.svg)](#)
 [![Vanilla JS](https://img.shields.io/badge/vanilla-JS%2FCSS%2FHTML-yellow.svg)](#)
 
 A **Neovim-themed personal website framework**. Zero build, zero npm, pure vanilla JS/CSS/HTML. Deploy on GitHub Pages in minutes.
