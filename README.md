@@ -8,9 +8,15 @@ A **Neovim-themed personal website framework**. Zero build, zero npm, pure vanil
 
 Your entire site is configured through a single `config.js` file. Add pages by dropping markdown files. Built-in DuckDB SQL console, Telescope fuzzy finder, vim keybindings, 5 color themes, and fun easter eggs.
 
+`neovim-web` is fully responsive and works great on mobile (yes, even the commands).
+
 👉 **[Live Demo](https://vojay-dev.github.io/neovim-web/)**
 
 ![Neovim Web](doc/neovim-web-demo.gif)
+
+![Alpha Dashboard](doc/screenshot-alpha.png)
+
+![Home](doc/screenshot-home.png)
 
 ---
 
@@ -44,6 +50,12 @@ Deploy to GitHub Pages. No build step needed, just push and go.
 - **Font Awesome icons** - inline icon syntax in markdown (`:fab fa-github:`)
 - **Mobile friendly** - responsive layout with touch support
 - **Easter eggs** - `:snake` (playable game!), `:matrix`, `:sl`
+
+![Telescope](doc/screenshot-telescope.png)
+
+![Blog](doc/screenshot-blog.png)
+
+![Light Theme](doc/screenshot-light.png)
 
 ---
 
@@ -321,6 +333,10 @@ config.js → commands.js → engine.js
 ## DuckDB SQL Console
 
 Run `:sql` to launch an in-browser SQL engine powered by [DuckDB WASM](https://duckdb.org/docs/api/wasm/overview.html). Your site pages are automatically loaded into a `pages` table:
+
+![SQL Console](doc/screenshot-sql-1.png)
+
+![SQL Query Results](doc/screenshot-sql-2.png)
 
 ```sql
 SELECT filename, word_count FROM pages ORDER BY word_count DESC;
