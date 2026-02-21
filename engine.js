@@ -456,7 +456,7 @@ function showAlpha() {
 
         const footer = document.createElement('div');
         footer.className = 'alpha-footer';
-        footer.innerHTML = `<span>${titleText}${accentText}</span> &nbsp; ${config.files.length} files &nbsp; ${Object.keys(customCommands).length} commands`;
+        footer.innerHTML = `<span>${titleText}${accentText}</span> &nbsp; ${config.files.length} files &nbsp; ${Object.keys(customCommands || {}).length} commands`;
 
         const themeSwitcher = document.createElement('div');
         themeSwitcher.className = 'alpha-theme-switcher';

@@ -1,7 +1,7 @@
 const customCommands = {
 
     'help': {
-        desc: 'Show this help menu",
+        desc: 'Show this help menu',
         fn: (args, sys) => {
             let html = `<h1>Available Commands</h1>`;
             html += `<p>Type <code>:command</code> to execute.</p>`;
@@ -22,7 +22,7 @@ const customCommands = {
     },
 
     'date': {
-        desc: 'Display current system time",
+        desc: 'Display current system time',
         fn: (args, sys) => {
             const now = new Date();
             sys.print(`
@@ -37,7 +37,7 @@ const customCommands = {
     },
 
     'socials': {
-        desc: 'List social media links",
+        desc: 'List social media links',
         fn: (args, sys) => {
             let html = `<h1>Social Links</h1><ul>`;
 
@@ -51,7 +51,7 @@ const customCommands = {
     },
 
     'whoami': {
-        desc: 'Identify current user session",
+        desc: 'Identify current user session',
         fn: async (args, sys) => {
             sys.print(`<p style="color:var(--comment)">Scanning network nodes... <span class="cursor">|</span></p>`);
 
@@ -112,7 +112,7 @@ const customCommands = {
     },
 
     'contact': {
-        desc: 'Send a mail",
+        desc: 'Send a mail',
         fn: (args, sys) => {
             const email = config.contact?.email || 'hello@example.com';
             sys.print(`<p>Initiating transmission to <strong style="color:var(--green)">${email}</strong>...</p>`);
@@ -124,7 +124,7 @@ const customCommands = {
     },
 
     'theme': {
-        desc: 'Cycle through themes",
+        desc: 'Cycle through themes',
         fn: (args, sys) => {
             const themes = window.THEMES || ['tokyo', 'gruvbox'];
 
@@ -139,7 +139,7 @@ const customCommands = {
     },
 
     'sl': {
-        desc: 'Don't mistype ls",
+        desc: 'Don\'t mistype ls',
         fn: (args, sys) => {
             const train = document.createElement('pre');
             train.style.position = 'fixed';
@@ -181,7 +181,7 @@ __/ =| o |=-~~\\  /~\\  /~\\  /~\\ ____Y___________|__|_________________|
     },
 
     'matrix': {
-        desc: 'Wake up, Neo...",
+        desc: 'Wake up, Neo...',
         fn: (args, sys) => {
             const getThemeColor = (varName) => getComputedStyle(document.documentElement).getPropertyValue(varName).trim();
 
@@ -237,7 +237,7 @@ __/ =| o |=-~~\\  /~\\  /~\\  /~\\ ____Y___________|__|_________________|
     },
 
     'snake': {
-        desc: 'Play snake",
+        desc: 'Play snake',
         fn: (args, sys) => {
             const container = document.getElementById('markdown-output');
             const width = Math.min(container.clientWidth, window.innerWidth - 40);
@@ -355,7 +355,7 @@ __/ =| o |=-~~\\  /~\\  /~\\  /~\\ ____Y___________|__|_________________|
     },
 
     'sql': {
-        desc: 'Query this website using DuckDB",
+        desc: 'Query this website using DuckDB',
         fn: async (args, sys) => {
             if (!window.duckConn) {
                 await window.initDuckDB(sys);
@@ -439,28 +439,28 @@ __/ =| o |=-~~\\  /~\\  /~\\  /~\\ ____Y___________|__|_________________|
     },
 
     'alpha': {
-        desc: 'Show startup dashboard",
+        desc: 'Show startup dashboard',
         fn: (args, sys) => {
             setTimeout(() => window.showAlpha(), 0);
         }
     },
 
     'telescope': {
-        desc: 'Fuzzy finder for files, commands, and links",
+        desc: 'Fuzzy finder for files, commands, and links',
         fn: (args, sys) => {
             setTimeout(() => window.openTelescope(), 0);
         }
     },
 
     'clear': {
-        desc: 'Clear current buffer",
+        desc: 'Clear current buffer',
         fn: (args, sys) => {
             sys.print("");
         }
     },
 
     'q': {
-        desc: 'Close current buffer",
+        desc: 'Close current buffer',
         fn: (args, sys) => {
             sys.closeBuffer();
         }
