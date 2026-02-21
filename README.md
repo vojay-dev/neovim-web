@@ -8,7 +8,7 @@ A **Neovim-themed personal website framework**. Zero build, zero npm, pure vanil
 
 Your entire site is configured through a single `config.js` file. Add pages by dropping markdown files. Built-in DuckDB SQL console, Telescope fuzzy finder, vim keybindings, 5 color themes, and fun easter eggs.
 
-**[Live Demo](https://vojay-dev.github.io/neovim-web/)**
+👉 **[Live Demo](https://vojay-dev.github.io/neovim-web/)**
 
 ![Neovim Web](doc/neovim-web-demo.gif)
 
@@ -329,6 +329,10 @@ SELECT filename, word_count FROM pages ORDER BY word_count DESC;
 ```sql
 SELECT filename FROM pages WHERE content LIKE '%javascript%';
 ```
+
+The data is dynamically added on the first execution of the `:sql` command based on your content. Which means, this works out-of-the-box, even with new content you add to the site.
+
+It is also safe as the database completely runs on client side. A nice feature, especially if you work in data 😉.
 
 ---
 
