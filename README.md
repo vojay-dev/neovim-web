@@ -10,6 +10,8 @@ Your entire site is configured through a single `config.js` file. Add pages by d
 
 **[Live Demo](https://vojay-dev.github.io/neovim-web/)**
 
+![Neovim Web](doc/neovim-web-demo.gif)
+
 ---
 
 ## Quick Start
